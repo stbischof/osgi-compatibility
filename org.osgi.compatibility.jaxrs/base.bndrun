@@ -1,0 +1,19 @@
+-runtrace: true
+
+-runproperties = \
+    report='true'
+    
+-runstartlevel: \
+    order=sortbynameversion,\
+    begin=-1
+
+    
+-runrequires.testcase: \
+	bnd.identity;id='org.osgi.test.cases.jaxrs'
+	
+-runee: JavaSE-1.8
+-runfw: org.eclipse.osgi
+
+-signaturetest = org.osgi.service.jaxrs.runtime,\
+                 org.osgi.service.jaxrs.runtime.dto,\
+                 org.osgi.service.jaxrs.whiteboard

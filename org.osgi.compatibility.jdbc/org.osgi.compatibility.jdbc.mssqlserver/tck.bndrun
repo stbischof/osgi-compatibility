@@ -1,0 +1,11 @@
+-include: ${.}/../base.bndrun
+
+-runrequires: \
+	bnd.identity;id='com.microsoft.sqlserver.mssql-jdbc'
+	
+-runbundles: \
+	assertj-core;version='[3.20.2,3.20.3)',\
+	com.microsoft.sqlserver.mssql-jdbc;version='[10.2.0,10.2.1)',\
+	org.apache.servicemix.bundles.junit;version='[4.13.2,4.13.3)',\
+	org.osgi.service.jdbc;version='[1.0.1,1.0.2)',\
+	org.osgi.test.cases.jdbc;version='[8.0.0,8.0.1)'
