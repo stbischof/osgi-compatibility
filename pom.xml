@@ -19,9 +19,22 @@
 			</snapshots>
 		</repository>
 	</repositories>
+	<pluginRepositories>
+		<pluginRepository>
+			<id>bnd-snapshots</id>
+			<url>https://bndtools.jfrog.io/bndtools/libs-snapshot/</url>
+			<layout>default</layout>
+			<releases>
+				<enabled>false</enabled>
+			</releases>
+			<snapshots>
+				<enabled>true</enabled>
+			</snapshots>
+		</pluginRepository>
+	</pluginRepositories>
 	<properties>
 		<revision>0.0.1-SNAPSHOT</revision>
-		<bnd.version>6.2.0</bnd.version>
+		<bnd.version>6.4.0-SNAPSHOT</bnd.version>
 		<felix.framework.version>7.0.3</felix.framework.version>
 		<org.eclipse.osgi.version>3.17.200</org.eclipse.osgi.version>
 	</properties>
@@ -39,11 +52,6 @@
 				<version>1.2.0</version>
 			</dependency>
 			<dependency>
-				<groupId>org.osgi</groupId>
-				<artifactId>org.osgi.util.promise</artifactId>
-				<version>1.2.0</version>
-			</dependency>
-						<dependency>
 				<groupId>org.osgi</groupId>
 				<artifactId>org.osgi.util.promise</artifactId>
 				<version>1.2.0</version>
